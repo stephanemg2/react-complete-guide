@@ -5,10 +5,12 @@ import React, { useState } from 'react';
 
 const ExpenseItem = (props) => {
 
-  let title = props.title;
+  // on recupere un couple variable setter pour gerer l'etat de la variable title
+  const [title, setTitle] = useState(props.title);
+  console.log("ExpenseItem evaluated by React");
  
   const clickHandler = () => {
-    title = 'Updated !';
+    setTitle('Updated !');
   }
 
   return (
