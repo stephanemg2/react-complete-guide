@@ -15,25 +15,14 @@ const ExpenseForm = (props) => {
     const titleChangeHandler = (event) => {
         //on retourne l'etat actualisé avec la nouvelle valeur
         setEnteredTitle(event.target.value);
-        // setUserInput((prevState) => {
-        //     return { ...prevState, enteredTitle: event.target.value }
-        // });
     };
 
     const amountChangeHandler = (event) => {
         setEnteredAmount(event.target.value);
-        // setUserInput({
-        //     ...userInput,
-        //     enteredAmount: event.target.value
-        // })
     }
 
     const dateChangeHandler = (event) => {
         setEnteredDate(event.target.value);
-        // setUserInput({
-        //     ...userInput,
-        //     enteredDate: event.target.value
-        // })
     }
 
     // on gere le submit du form au niveau global du form sur l'evenement onSubmit , on evite le reload
@@ -46,7 +35,6 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate)
         }
         // on rappele la fonction transmise par le composant parent 
-        // console.log(props.onSaveExpenseData);
         props.onSaveExpenseData(expenseData);
         // reset des valeurs 
         setEnteredTitle('');
