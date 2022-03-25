@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 
 const DUMMY_EXPENSES = [
   { title: 'Car Insurance', amount: '122', date: new Date(2022, 2, 17) },
-  { title: 'Toilet Paper', amount: '123', date: new Date(2022, 7, 18) },
-  { title: 'Netflix', amount: '124', date: new Date(2022, 6, 19) },
-  { title: 'Tv', amount: '125', date: new Date(2022, 1, 20) }
+  { title: 'Toilet Paper', amount: '123', date: new Date(2021, 7, 18) },
+  { title: 'Netflix', amount: '124', date: new Date(2020, 6, 19) },
+  { title: 'Tv', amount: '125', date: new Date(2019, 1, 20) }
 ];
 
 
