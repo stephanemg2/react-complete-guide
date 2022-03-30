@@ -8,8 +8,6 @@ const NewExpense = (props) => {
     //pour gerer l'apparition du bouton global new Expense
     const startEditingHandler = () => {
         setEditing(true);
-        console.log('in startEditingHandler');
-        console.log(isEditing);
     };
 
     const stopEditingHandler = () => {

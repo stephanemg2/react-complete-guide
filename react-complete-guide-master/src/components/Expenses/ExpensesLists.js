@@ -1,5 +1,4 @@
 import React from 'react';
-import ExpenseDate from './ExpenseDate';
 import ExpenseItem from './ExpenseItem';
 import './ExpensesList.css';
 
