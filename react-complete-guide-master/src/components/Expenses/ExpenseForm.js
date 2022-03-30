@@ -27,7 +27,7 @@ const ExpenseForm = (props) => {
         //on recupere le data géré par les variables de state
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
         }
         // on rappele la fonction transmise par le composant parent 

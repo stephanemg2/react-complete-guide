@@ -4,7 +4,7 @@ import './ChartBar.css'
 const ChartBar = props => {
     let barFillHeight = '0%';
     // recalcul de la taille de la barre en fonction de la valeur fournie 
-    if (props.max > 0) {
+    if (props.maxValue > 0) {
         barFillHeight = Math.round((props.value / props.maxValue) * 100);
     }
 
